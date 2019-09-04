@@ -38,9 +38,6 @@
                 {{ event.description.text }}
                 <br>
                 <time>{{ event.start.local }} - {{ event.end.local }}</time>
-            <footer class="card-footer">
-                <a class="card-footer-item" href="{% url 'task-list' event.id %}">View tasks</a>
-            </footer>
         </div>
     </div>
     </div>
