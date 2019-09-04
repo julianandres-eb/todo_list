@@ -1,0 +1,12 @@
+{% extends 'parent.html' %}
+
+{% load bulma_tags %}
+
+{% block content %}
+    {% csrf_token %}
+    <form action="" method="post">{% csrf_token %}
+    <p>Are you sure you want to delete "{{ object }}"?</p>
+    <br />
+    <input class="button is-danger is-rounded" type="submit" value="Confirm" />
+</form>
+{% endblock %}
