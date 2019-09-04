@@ -27,7 +27,6 @@ class EventList(TemplateView):
     template_name = 'events/list_events.html'
 
     def get_events(self):
-        import ipdb; ipdb.set_trace()
         social = self.request.user.social_auth.filter(provider='eventbrite')[0]
         token = social.access_token
         eventbrite = Eventbrite(token)
