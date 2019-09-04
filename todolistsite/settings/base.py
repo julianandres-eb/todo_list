@@ -54,11 +54,6 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-SOCIAL_AUTH_EVENTBRITE_KEY = get_env_variable('SOCIAL_AUTH_EVENTBRITE_KEY')
-SOCIAL_AUTH_EVENTBRITE_SECRET = get_env_variable(
-   'SOCIAL_AUTH_EVENTBRITE_SECRET'
-)
-
 AUTHENTICATION_BACKENDS = (
    'social_core.backends.eventbrite.EventbriteOAuth2',
    'django.contrib.auth.backends.ModelBackend',

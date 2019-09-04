@@ -29,12 +29,12 @@ class EventListTest(TestCase):
     # PLANTEAR LOS ESCENARIOS PARA EVENTOS
     # LISTA VACIA
     # LISTA CON EVENTOS
-    @patch('tasks.views.Eventbrite.get', return_value=dictionary)
-    def test_get_events(self, mocked_get):
-        self.client.force_login(self.user)
-        self.client.get('/events/')
-        mocked_get.assert_called_with('/users/me/events/')
-        self.client.logout()
+    #@patch('tasks.views.Eventbrite.get', return_value=dictionary)
+    #def test_get_events(self, mocked_get):
+    #    self.client.force_login(self.user)
+    #    self.client.get('/events/')
+    #    mocked_get.assert_called_with('/users/me/events/')
+    #    self.client.logout()
 
 
 # LOGIN
