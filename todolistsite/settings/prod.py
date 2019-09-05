@@ -1,7 +1,6 @@
 from .base import * # noqa
 
-ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '127.0.0.1',            
-'pacific-mesa-68773.herokuapp.com/']
+ALLOWED_HOSTS = ['pacific-mesa-68773.herokuapp.com/']
 
 SECRET_KEY = os.environ.get('SECRET_KEY')
 EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
