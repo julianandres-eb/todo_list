@@ -1,10 +1,7 @@
 from .base import * # noqa
+import dj_database_url
 
 ALLOWED_HOSTS = ['pacific-mesa-68773.herokuapp.com/']
-
-SECRET_KEY = os.environ.get('SECRET_KEY')
-EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
-EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
 
 DEBUG = False
 
